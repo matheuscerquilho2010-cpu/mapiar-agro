@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* DroneBox Dark Agro-Tech Palette */
+  --color-agro-950: #03140c;
+  --color-agro-900: #062316;
+  --color-agro-850: #082d1c;
+  --color-agro-800: #0c3823;
+  --color-agro-700: #10482d;
+  --color-agro-600: #155e3a;
+
+  --color-lime-brand: #84cc16;
+  --color-lime-glow: #a3e635;
+  --color-gold-accent: #eab308;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #03140c;
+  color: #f8fafc;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom scrollbar matching DroneBox dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #03140c;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f3d27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #84cc16;
+}
+
+/* DroneBox Agro Grid Pattern */
+.bg-agro-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(132, 204, 22, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(132, 204, 22, 0.04) 1px, transparent 1px);
+}
+
+.card-dronebox {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-dronebox:hover {
+  transform: translateY(-4px);
+  border-color: rgba(132, 204, 22, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(132, 204, 22, 0.12);
+}
+
+/* Floating Mascot Keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+@keyframes float-logo {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float-hero {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(2deg);
+  }
+}
+
+@keyframes float-shadow {
+  0%, 100% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(0.75);
+    opacity: 0.25;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.08);
+  }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.animate-float-logo {
+  animation: float-logo 3s ease-in-out infinite;
+  display: inline-block;
+  will-change: transform;
+}
+
+.animate-float-hero {
+  animation: float-hero 5s ease-in-out infinite;
+}
+
+.animate-float-shadow {
+  animation: float-shadow 5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-logo,
+  .animate-float-hero,
+  .animate-float-shadow,
+  .animate-pulse-glow {
+    animation: none;
+  }
+}
+

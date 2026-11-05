@@ -1,0 +1,6 @@
+{
+  "name": "MapIar - Inteligência Aérea & Geotecnologia",
+  "description": "Website institucional oficial da MapIar: mapeamento aéreo com drones, inteligência artificial, geoprocessamento e agricultura de precisão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

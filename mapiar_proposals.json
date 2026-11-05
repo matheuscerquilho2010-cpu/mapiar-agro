@@ -1,0 +1,42 @@
+[
+  {
+    "id": "MAP-MW3LXE7V",
+    "nome": "Carlos Mendonça",
+    "empresa": "Agropecuária Santa Fé",
+    "telefone": "(11) 98765-4321",
+    "email": "carlos@agropecuaria.com.br",
+    "servico": "Mapeamento Aéreo & Ortomosaicos",
+    "localizacao": "Ribeirão Preto/SP",
+    "mensagem": "Precisamos de levantamento planialtimétrico com curvas de nível de 1m para 450 hectares de cana.",
+    "createdAt": "2026-11-05T13:54:33.403Z",
+    "status": "recebido"
+  },
+  {
+    "id": "MAP-MW3M43WE",
+    "nome": "Lucas Ferreira",
+    "empresa": "Fazenda Primavera",
+    "telefone": "(16) 99876-5432",
+    "email": "lucas@fazendaprimavera.agr.br",
+    "cultura": "Cana-de-açúcar",
+    "areaHa": "400",
+    "municipioUf": "Ribeirão Preto/SP",
+    "servico": "Restituição de linhas",
+    "mensagem": "Gostaria de proposta para restituição de linhas de colhedora na safra 2026.",
+    "createdAt": "2026-11-05T13:59:46.622Z",
+    "status": "recebido"
+  },
+  {
+    "id": "MAP-MW3MJNF6",
+    "nome": "Carlos Silva",
+    "empresa": "Fazenda Santa Fé",
+    "telefone": "11987654321",
+    "email": "carlos@fazendastafe.com.br",
+    "cultura": "Soja",
+    "areaHa": "450",
+    "municipioUf": "Ribeirão Preto - SP",
+    "servico": "Restituição de linhas",
+    "mensagem": "Gostaria de agendar um mapeamento para a safra de verão.",
+    "createdAt": "2026-11-05T14:11:51.762Z",
+    "status": "recebido"
+  }
+]
