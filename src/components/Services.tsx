@@ -50,7 +50,11 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
                   {/* Card Image with Hover Zoom */}
                   <div className="relative aspect-16/10 overflow-hidden bg-neutral-900">
                     <img
-                      src={service.image || '/src/assets/images/mapiar_hero_drone_survey_1793886340679.jpg'}
+                      src={service.image || '/assets/images/mapiar_hero_drone_survey_1793886340679.jpg'}
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = '/assets/images/mapiar_hero_drone_survey_1793886340679.jpg';
+                      }}
                       alt={`Serviço de ${service.title} MapIar`}
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"

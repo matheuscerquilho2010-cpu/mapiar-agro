@@ -58,7 +58,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Restituição de linhas',
     description: 'Linhas de plantio prontas para o piloto automático da colhedora, direto do ortomosaico. Menos pisoteio e retrabalho.',
     tag: 'Piloto Automático',
-    image: '/src/assets/images/mapiar_hero_drone_survey_1793886340679.jpg',
+    image: '/assets/images/mapiar_hero_drone_survey_1793886340679.jpg',
     features: [
       'Geração de arquivos compatíveis com John Deere, Trimble e Agres',
       'Minimização do pisoteio em soqueiras e linhas de cana/grãos',
@@ -70,7 +70,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Projeto de plantio',
     description: 'Linhas de plantio otimizadas pelo relevo e pelo talhão, prontas para o piloto automático — aproveitando melhor cada hectare.',
     tag: 'Otimização de Hectare',
-    image: '/src/assets/images/service_adubacao_plantio_1793886340679.jpg',
+    image: '/assets/images/service_adubacao_plantio_1793886340679.jpg',
     features: [
       'Traçado de linhas em nível para terraceamento e conservação',
       'Eliminação de tiros mortos e manobras excessivas de maquinário',
@@ -82,7 +82,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Projeto de colheita',
     description: 'Linhas de colheita e planejamento operacional para o piloto automático, reduzindo pisoteio e retrabalho.',
     tag: 'Menos Pisoteio',
-    image: '/src/assets/images/hero_agricultural_drone_1793885883894.jpg',
+    image: '/assets/images/hero_agricultural_drone_1793885883894.jpg',
     features: [
       'Roteirização precisa de transbordo e tráfego controlado',
       'Evita compactação sobre linhas principais de rebrota',
@@ -94,7 +94,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Projeto de pulverização',
     description: 'Planejamento de aplicação e mapas de taxa variável (VRT) a partir de imagem multiespectral — a dose certa em cada zona.',
     tag: 'Taxa Variável (VRT)',
-    image: '/src/assets/images/service_pulverizacao_drone_1793885885323.jpg',
+    image: '/assets/images/service_pulverizacao_drone_1793885885323.jpg',
     features: [
       'Mapas de prescrição ISOBUS/Shapefile para pulverizadores',
       'Economia de até 30% em defensivos e fertilizantes foliares',
@@ -106,7 +106,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Acompanhamento de lavoura',
     description: 'Monitoramento por índices (NDVI, NDRE) ao longo da safra — vigor, falhas e estresse antes do olho ver.',
     tag: 'Índices Multiespectrais',
-    image: '/src/assets/images/mapiar_orthomosaic_mapping_1793886341697.jpg',
+    image: '/assets/images/mapiar_orthomosaic_mapping_1793886341697.jpg',
     features: [
       'Voos temporais comparativos ao longo do ciclo fenológico',
       'Detecção prematura de estresse hídrico e desbalanço nutricional',
@@ -118,7 +118,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Identificação de pragas e doenças',
     description: 'Câmera multiespectral mapeia focos de estresse antes de virarem sintoma visível, para agir no ponto certo.',
     tag: 'Manejo Fitossanitário',
-    image: '/src/assets/images/mapiar_ai_geospatial_platform_1793886344021.jpg',
+    image: '/assets/images/mapiar_ai_geospatial_platform_1793886344021.jpg',
     features: [
       'Mapeamento de reboleiras de nematoides, lagartas e ferrugem',
       'Localização geográfica precisa para checagem direcionada de campo',
@@ -130,7 +130,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Pesquisa · eficácia de defensivos',
     description: 'Ensaios calibrados, tratado × testemunha, com índices, estatística e laudo (ART). Prova científica do produto.',
     tag: 'Comprovação Científica',
-    image: '/src/assets/images/mapiar_about_geotech_1793886340983.jpg',
+    image: '/assets/images/mapiar_about_geotech_1793886340983.jpg',
     features: [
       'Delineamento em blocos com repetições e testemunha',
       'Painel de reflectância calibrada para dados comparáveis no tempo',
@@ -142,7 +142,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Mapeamento / ortomosaico',
     description: 'Voo com drone e ortomosaico georreferenciado de alta resolução — a base precisa para todos os serviços.',
     tag: 'Base Georreferenciada',
-    image: '/src/assets/images/mapiar_cta_aerial_horizon_1793886343358.jpg',
+    image: '/assets/images/mapiar_cta_aerial_horizon_1793886343358.jpg',
     features: [
       'Acurácia centimétrica com tecnologia RTK/PPK',
       'Exportação para GeoTIFF, KML, CAD e plataformas agrícolas',
@@ -185,27 +185,27 @@ export const DELIVERABLE_EXAMPLES: DeliverableExample[] = [
     type: 'linhas',
     title: 'Restituição de linhas',
     description: 'Linhas prontas para o piloto automático da colhedora.',
-    image: '/src/assets/images/mapiar_hero_drone_survey_1793886340679.jpg'
+    image: '/assets/images/mapiar_hero_drone_survey_1793886340679.jpg'
   },
   {
     id: 'ex-ndvi',
     type: 'ndvi',
     title: 'Mapa NDVI',
     description: 'Vigor e estresse da lavoura por cor com escala radiométrica.',
-    image: '/src/assets/images/mapiar_orthomosaic_mapping_1793886341697.jpg'
+    image: '/assets/images/mapiar_orthomosaic_mapping_1793886341697.jpg'
   },
   {
     id: 'ex-talhoes',
     type: 'talhoes',
     title: 'Talhões delimitados',
     description: 'Contorno automático de glebas a partir das linhas de voo.',
-    image: '/src/assets/images/mapiar_cta_aerial_horizon_1793886343358.jpg'
+    image: '/assets/images/mapiar_cta_aerial_horizon_1793886343358.jpg'
   },
   {
     id: 'ex-defensivos',
     type: 'defensivos',
     title: 'Eficácia de defensivos',
     description: 'Tratado × testemunha ao longo do tempo com delineamento.',
-    image: '/src/assets/images/mapiar_ai_geospatial_platform_1793886344021.jpg'
+    image: '/assets/images/mapiar_ai_geospatial_platform_1793886344021.jpg'
   }
 ];

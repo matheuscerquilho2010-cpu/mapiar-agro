@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Cpu, Leaf, Compass, ShieldCheck } from 'lucide-react';
 import { ABOUT_STATS, COMPANY_INFO } from '../data/mapiarData';
+import aboutImg from '../assets/images/mapiar_about_geotech_1793886340983.jpg';
 
 interface AboutProps {
   onContactClick: () => void;
@@ -102,7 +103,11 @@ export const About: React.FC<AboutProps> = ({ onContactClick }) => {
               <div className="w-full aspect-4/3 bg-gradient-to-br from-emerald-950 to-neutral-950" />
 
               <img
-                src="/src/assets/images/mapiar_about_geotech_1793886340983.jpg"
+                src={aboutImg}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/assets/images/mapiar_about_geotech_1793886340983.jpg';
+                }}
                 alt="Engenheiro Agrônomo da MapIar com drone e base RTK em campo"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

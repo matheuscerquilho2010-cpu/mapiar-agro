@@ -1,5 +1,7 @@
 import React from 'react';
 import { ArrowRight, ChevronDown, CheckCircle2, ShieldCheck, Compass, Droplets } from 'lucide-react';
+import roboImg from '../assets/images/robo_agricultor.png';
+import heroDroneImg from '../assets/images/mapiar_hero_drone_survey_1793886340679.jpg';
 
 interface HeroProps {
   onContactClick: () => void;
@@ -19,7 +21,11 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onServicesClick }) =
         
         {/* Cinematic Agricultural Drone Photography */}
         <img
-          src="/src/assets/images/mapiar_hero_drone_survey_1793886340679.jpg"
+          src={heroDroneImg}
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = '/assets/images/mapiar_hero_drone_survey_1793886340679.jpg';
+          }}
           alt="Drone profissional sobrevoando lavoura com curvas de nível e geotecnologia MapIar"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center scale-105 animate-in fade-in duration-1000"
@@ -118,7 +124,11 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onServicesClick }) =
               {/* Floating Robot Mascot Image */}
               <div className="relative animate-float-hero group cursor-pointer" onClick={() => onContactClick()}>
                 <img
-                  src="/src/assets/images/robo_agricultor.png"
+                  src={roboImg}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = '/assets/images/robo_agricultor.png';
+                  }}
                   alt="Robô Agricultor com Chapéu de Palha MapIar"
                   className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[360px] lg:h-[360px] object-contain filter drop-shadow-[0_20px_35px_rgba(132,204,22,0.35)] transition-transform duration-500 group-hover:scale-105"
                 />
