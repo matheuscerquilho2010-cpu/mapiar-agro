@@ -133,12 +133,57 @@ h1, h2, h3, h4, .font-display {
   animation: pulse-glow 4s ease-in-out infinite;
 }
 
+/* Intro Drone Animations */
+@keyframes spin-propeller {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-propeller {
+  animation: spin-propeller 0.15s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes intro-drone-hover {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-9px) rotate(-1.2deg);
+  }
+}
+
+.animate-intro-drone-hover {
+  animation: intro-drone-hover 2.2s ease-in-out infinite;
+}
+
+@keyframes intro-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-intro-shimmer {
+  animation: intro-shimmer 2.2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-float,
   .animate-float-logo,
   .animate-float-hero,
   .animate-float-shadow,
-  .animate-pulse-glow {
+  .animate-pulse-glow,
+  .animate-spin-propeller,
+  .animate-intro-drone-hover,
+  .animate-intro-shimmer {
     animation: none;
   }
 }
