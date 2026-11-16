@@ -3,8 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useRef } from 'react';
-import { IntroDrone } from './components/IntroDrone';
+import { useRef } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Indicators } from './components/Indicators';
@@ -17,7 +16,6 @@ import { Footer } from './components/Footer';
 import { WhatsAppFloating } from './components/WhatsAppFloating';
 
 export default function App() {
-  const [showIntro, setShowIntro] = useState(true);
   const contactRef = useRef<ContactRef>(null);
 
   const handleContactClick = (serviceName?: string) => {
@@ -50,9 +48,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#03140c] text-neutral-100 flex flex-col font-sans antialiased selection:bg-lime-400 selection:text-neutral-950">
-      {/* Intro Animation with Drone carrying Logo */}
-      {showIntro && <IntroDrone onComplete={() => setShowIntro(false)} />}
-
       {/* Top Navigation */}
       <Header onContactClick={handleContactClick} />
 
